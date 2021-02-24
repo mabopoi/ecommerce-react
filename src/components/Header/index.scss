@@ -1,0 +1,24 @@
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: green;
+}
+
+header img {
+  width: 250px;
+}
+
+h1 {
+  color: white;
+}
+
+header button {
+  position: absolute;
+  top: 140px;
+  width: 200px;
+}
