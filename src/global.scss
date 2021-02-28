@@ -1,0 +1,18 @@
+@mixin main-btn {
+  padding: 8px 4px;
+  border: none;
+  font-family: 'IBM Plex Serif', sans-serif;
+  font-size: 1.6rem;
+  border-radius: 4px;
+  background-color: darkgrey;
+  cursor: pointer;
+  &:focus,
+  &:hover {
+    background-color: rgba(145, 145, 1, 1);
+    color: white;
+  }
+  &:active {
+    background-color: rgba(145, 145, 1, 0.9);
+    color: white;
+  }
+}

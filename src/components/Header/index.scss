@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 header {
   position: relative;
   display: flex;
@@ -5,20 +7,21 @@ header {
   text-align: center;
   justify-content: center;
   align-items: center;
-  height: 150px;
+  height: 180px;
   background-color: green;
 }
 
-header img {
-  width: 250px;
+.header__logo {
+  width: 300px;
 }
 
 h1 {
   color: white;
 }
 
-header button {
+.header__btn {
   position: absolute;
-  top: 140px;
-  width: 200px;
+  top: 160px;
+  width: 150px;
+  @include main-btn;
 }

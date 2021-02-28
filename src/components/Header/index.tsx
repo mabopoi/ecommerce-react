@@ -5,9 +5,11 @@ import './index.scss';
 const Header: React.FC = () => {
   return (
     <header>
-      <img src={Logo} alt='Webpage logo' />
+      <img src={Logo} alt='Webpage logo' className='header__logo' />
       <h1>Your place to shop!</h1>
-      <button>Go to checkout</button>
+      <button type='button' className='header__btn'>
+        Go to checkout
+      </button>
     </header>
   );
 };
