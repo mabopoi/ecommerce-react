@@ -25,3 +25,7 @@ h1 {
   width: 150px;
   @include main-btn;
 }
+
+.header__btnIcon {
+  margin-left: 8px;
+}

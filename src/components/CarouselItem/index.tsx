@@ -1,24 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Product } from '../../types';
 import './index.scss';
 
-interface Props {
-  src: string;
-  productName: string;
-  price: string;
-}
+const CarouselItem: React.FC<Product> = ({ src, productName, price }) => {
+  const [done, setDone] = useState(false);
 
-const CarouselItem: React.FC<Props> = ({ src, productName, price }) => {
   return (
     <article className='product'>
       <img
         className='product__img'
         src={src}
-        alt={`${productName} product`}
+        alt={`${productName} item`}
         loading='lazy'
       />
       <p className='product__name'>{productName}</p>
       <span className='product__price'>{price}</span>
-      <button className='product__btn' type='button'>
+      <button
+        className={done ? 'product__btn done' : 'product__btn'}
+        type='button'
+        onClick={() => setDone(true)}
+      >
         Add to cart
       </button>
     </article>

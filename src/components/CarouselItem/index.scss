@@ -1,9 +1,47 @@
+@import '../../global.scss';
+
 .product {
-  width: 120px;
+  width: 220px;
   height: 300px;
   margin: 1rem;
+  background-color: white;
+  border: 1px solid grey;
+  text-align: center;
 }
 
 .product__img {
+  margin: 8px 0px;
   width: 100%;
+  height: 50%;
+}
+
+.product__name {
+  margin-bottom: 16px;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.product__price {
+  display: block;
+  font-family: 'IBM Plex Serif', sans-serif;
+  font-size: 1.6rem;
+  margin: 8px 16px;
+}
+
+.product__btn {
+  @include secondary-btn;
+}
+
+.done::before {
+  content: '';
+  position: absolute;
+  border-color: #009933;
+  border-style: solid;
+  border-width: 0 0.3em 0.25em 0;
+  height: 1em;
+  top: 1.5em;
+  left: 0.6em;
+  margin-top: -1em;
+  transform: rotate(45deg);
+  width: 0.5em;
 }
