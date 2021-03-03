@@ -3,3 +3,12 @@ export interface Product {
   productName: string;
   price: string;
 }
+
+export interface IAction {
+  type: string;
+  payload: Product;
+}
+
+export interface State {
+  cart: Product[];
+}

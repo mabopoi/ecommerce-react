@@ -1,0 +1,17 @@
+.carousel {
+  display: flex;
+  align-items: center;
+  height: 350px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
+.carousel::-webkit-scrollbar {
+  background-color: white;
+  height: 3px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background-color: rgba(190, 218, 136, 1);
+}

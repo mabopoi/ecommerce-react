@@ -1,7 +1,9 @@
 @import '../../global.scss';
 
 .product {
-  width: 220px;
+  scroll-snap-align: center;
+  min-width: 220px;
+  max-width: 250px;
   height: 300px;
   margin: 1rem;
   background-color: white;

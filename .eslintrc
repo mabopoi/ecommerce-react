@@ -19,7 +19,7 @@
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json"
+    "project": ["./vite.config.ts", "./tsconfig.json"]
   },
   "plugins": ["react", "jsx-a11y", "import", "@typescript-eslint"],
   "rules": {
