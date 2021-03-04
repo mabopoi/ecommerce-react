@@ -9,6 +9,10 @@ const reducer = (state = initialState, action: IAction): State => {
       return {
         cart: [...state.cart, action.payload],
       };
+    case actionsJSON.removeFromCart:
+      return {
+        cart: state.cart.filter((item) => item.id !== action.payload.id), //MUST CHANGE
+      };
     default:
       return state;
   }

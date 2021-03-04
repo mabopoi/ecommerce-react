@@ -7,9 +7,15 @@ const Carousel: React.FC = () => {
   return (
     <section className='carousel'>
       {products.map((product) => {
-        const { src, productName, price } = product;
+        const { id, src, productName, price } = product;
         return (
-          <CarouselItem src={src} productName={productName} price={price} />
+          <CarouselItem
+            key={id}
+            id={id}
+            src={src}
+            productName={productName}
+            price={price}
+          />
         );
       })}
     </section>

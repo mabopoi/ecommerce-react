@@ -17,7 +17,7 @@ Then you can open http://localhost:3000 to see the result!
 
 ## Creating production bundle
 
-Builds the app for production to the `build` folder.
+Builds the app for production in the `dist` folder.
 
     npm run build
 
