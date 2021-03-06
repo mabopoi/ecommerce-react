@@ -9,10 +9,18 @@ const reducer = (state = initialState, action: IAction): State => {
       return {
         cart: [...state.cart, action.payload],
       };
+
     case actionsJSON.removeFromCart:
+      for (let i = 0; i < state.cart.length; i++) {
+        if (state.cart[i].id === action.payload.id) {
+          state.cart.splice(i, 1);
+          break;
+        }
+      }
       return {
-        cart: state.cart.filter((item) => item.id !== action.payload.id), //MUST CHANGE
+        cart: [...state.cart],
       };
+
     default:
       return state;
   }

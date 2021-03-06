@@ -5,7 +5,7 @@ import { addToCart } from '../../actions';
 import './index.scss';
 
 interface Props extends Product {
-  addToCart: (arg1: Product) => {};
+  addToCart: (arg0: Product) => {};
 }
 
 const CarouselItem: React.FC<Props> = (props) => {
@@ -19,17 +19,17 @@ const CarouselItem: React.FC<Props> = (props) => {
   };
 
   return (
-    <article className='product'>
+    <article className='carouselItem'>
       <img
-        className='product__img'
+        className='carouselItem__img'
         src={src}
         alt={`${productName} item`}
         loading='lazy'
       />
-      <p className='product__name'>{productName}</p>
-      <span className='product__price'>{price}</span>
+      <p className='carouselItem__name'>{productName}</p>
+      <span className='carouselItem__price'>{price}</span>
       <button
-        className={done ? 'product__btn done' : 'product__btn'}
+        className={done ? 'carouselItem__btn done' : 'carouselItem__btn'}
         type='button'
         onClick={handleClick}
       >

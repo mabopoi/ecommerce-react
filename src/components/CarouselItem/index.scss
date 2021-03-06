@@ -1,6 +1,6 @@
 @import '../../global.scss';
 
-.product {
+.carouselItem {
   scroll-snap-align: center;
   min-width: 220px;
   max-width: 250px;
@@ -11,26 +11,26 @@
   text-align: center;
 }
 
-.product__img {
+.carouselItem__img {
   margin: 8px 0px;
   width: 100%;
   height: 50%;
 }
 
-.product__name {
+.carouselItem__name {
   margin-bottom: 16px;
   font-size: 2.4rem;
   font-weight: 500;
 }
 
-.product__price {
+.carouselItem__price {
   display: block;
   font-family: 'IBM Plex Serif', sans-serif;
   font-size: 1.6rem;
   margin: 8px 16px;
 }
 
-.product__btn {
+.carouselItem__btn {
   @include secondary-btn;
 }
 

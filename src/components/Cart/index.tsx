@@ -1,12 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import CartItem from '../CartItem';
 import { State } from '../../types';
 
 const Cart: React.FC<State> = ({ cart }) => {
   return (
     <section>
       {cart.map((item) => (
-        <h3>{item.productName}</h3>
+        <CartItem key={cart.indexOf(item)} product={item} />
       ))}
     </section>
   );
