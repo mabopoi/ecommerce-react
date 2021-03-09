@@ -1,14 +1,14 @@
 import React from 'react';
 import Header from '../components/Header';
 import Carousel from '../components/Carousel';
-import Cart from '../components/Cart';
+import CartSection from '../components/CartSection';
 
 const Home = () => {
   return (
     <>
       <Header />
       <Carousel />
-      <Cart cart={[]} />
+      <CartSection cart={[]} />
       {/* cart prop required by TypeScript compiler */}
     </>
   );

@@ -16,6 +16,7 @@ const CarouselItem: React.FC<Props> = (props) => {
   const handleClick = () => {
     setDone(true);
     addToCart({ id, src, productName, price });
+    setTimeout(() => setDone(false), 500);
   };
 
   return (

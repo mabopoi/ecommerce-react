@@ -1,0 +1,17 @@
+.cart {
+  max-width: 650px;
+  margin: 0 auto;
+  height: 300px;
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+  scroll-snap-type: y proximity;
+}
+
+.cart::-webkit-scrollbar {
+  background-color: white;
+  width: 3px;
+}
+
+.cart::-webkit-scrollbar-thumb {
+  background-color: rgba(190, 218, 136, 1);
+}
