@@ -20,9 +20,14 @@ const CartSection: React.FC<State> = ({ cart }) => {
       {total ? (
         <>
           <h3>This is your cart</h3>
-          <Cart cart={[]} />
-          <p>Total Checkout:</p>
-          <span>{total}</span>
+          <div className='cartSection__cartContainer'>
+            <Cart cart={[]} />
+            <p>Total Checkout:</p>
+            <span className='cartSection__total'>
+              {total}
+              USD
+            </span>
+          </div>
         </>
       ) : (
         <h3>Your cart is empty! Go to the home and add some items!</h3>
