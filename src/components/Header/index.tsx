@@ -9,7 +9,12 @@ const Header: React.FC = () => {
 
   return (
     <header>
-      <img src={Logo} alt='Webpage logo' className='header__logo' />
+      <img
+        src={Logo}
+        alt='Webpage logo'
+        className='header__logo'
+        onClick={() => history.push('/')}
+      />
       <h1>Your place to shop!</h1>
       <button
         type='button'

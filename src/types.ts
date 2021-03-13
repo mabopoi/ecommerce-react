@@ -17,7 +17,7 @@ export interface State {
 }
 
 export interface Route {
-  exact: true;
+  exact: boolean;
   path: string;
   component: FC;
 }

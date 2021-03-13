@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import Cart from '../Cart';
 import { State } from '../../types';
+import './index.scss';
 
 const CartSection: React.FC<State> = ({ cart }) => {
   const [total, setTotal] = useState(0);
@@ -19,7 +20,7 @@ const CartSection: React.FC<State> = ({ cart }) => {
     <main className='cartSection'>
       {total ? (
         <>
-          <h3>This is your cart</h3>
+          <h3 className='cartSection__title'>This is your cart</h3>
           <div className='cartSection__cartContainer'>
             <Cart cart={[]} />
             <p>Total Checkout:</p>
@@ -30,7 +31,11 @@ const CartSection: React.FC<State> = ({ cart }) => {
           </div>
         </>
       ) : (
-        <h3>Your cart is empty! Go to the home and add some items!</h3>
+        <div className='cartSection__container'>
+          <h3 className='cartSection__title--emptyCart'>
+            Your cart is empty! Go to the home and add some items!
+          </h3>
+        </div>
       )}
     </main>
   );
